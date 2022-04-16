@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Sylhet Premium Trip",
+    "price": "5500",
+    "description": " Lalakhal,Bholaganj Shada Pathor,Jaflong,Ratargul Swamp Forest,Ali Amjad's Clock,Hazrat Shahjalal Mazar,Keane Bridge,Lakkatura Tea State,Sreepur Tea Garden",
+    "img": "https://i.ibb.co/5TJ3gvz/r-Ex-O73-JIk7swof-Dm1-X4o-Cgx-Lx8-SYVzf-Mv-HBdu-F6h.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Sajek Premium Package",
+    "price": "4200",
+    "description": " Rui lui para,Konglak Pahar,Alutila Cave,Risang Waterfall,Sajek Helipad,Sajek Stone Garden,Khagrachori Town",
+    "img": "https://i.ibb.co/0XMmkWF/2f-Is-Pg-V8-Q0o-Tjmc-Ocl-G5-NDdc3ra-GNIU6xoh-O9-WYy.jpg"
+  },
+  {
+    "id": 3,
+    "name": "St. Martin Economy Trip",
+    "price": "150",
+    "description": "Chera Dwip,St. Martin's Island. It is a St. Martin Economy Package for students specially. Coxbazer to teknaf to sentmartin",
+    "img": "https://i.ibb.co/8ctZYpp/CRTGWwa-Jw1ae-Jkt-D5-Kgve-Y2ttn-DPUe-Qje9-EI9a9-M.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Debotakhum Day Trip",
+    "price": "1800",
+    "description": "Devtakhum is a place of natural beauty in Bandarban district . Here clear water flows in the middle of high mountains. It is an attractive place for tourists.",
+    "img": "https://i.ibb.co/rt2Rybq/on-V12h-N2mx5i-Cr-SI3-Thzu4d7nzq-GXx-FOK6-SHSdxw.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Tanguar Haor Premium Trip",
+    "price": "3000",
+    "description": "Tanguar Haor Premium Trip with BOJRA boat. We go to Niladri lake,Shimul Bagan,Tanguar Haor Watch Tower,Lakmachara ",
+    "img": "https://i.ibb.co/N6ZgKPm/icgy-GQRER7-Ik-Wl0-Urk2w7-Rja-DHCnkk-FLj-QLw-E71w.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Jalalpur + Nikli + Mithamain Package ( 2D/1N)",
+    "price": "3200",
+    "description": "Jalalpur + Nikli + Mithamain Package ( 2D/1N). This is a 1-night staycation and Nikli and Mithamain tour Package.",
+    "img": "https://i.ibb.co/k34hDkw/3-EVK3-Ic-WFKMa3l-MZP9-MU7vjrm6-R336g-UIABm-Hk-Lu.jpg"
+  }
+]
