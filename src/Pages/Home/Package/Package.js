@@ -2,14 +2,14 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Package.css'
 
-const Service = ({ service }) => {
-    const { id, name, img, description, price } = service;
+const Package = ({ allPackage }) => {
+    const { id, name, img, description, price } = allPackage;
     const navigate = useNavigate();
     const navigateToServiceDetails = id => {
         navigate(`/service/${id}`)
     }
     return (
-        <div className='service'>
+        <div className='package'>
             <img src={img} alt="" />
             <h4 className='mt-1'>{name}</h4>
             <p><small>{description}</small></p>
@@ -19,4 +19,4 @@ const Service = ({ service }) => {
     );
 };
 
-export default Service;
+export default Package;
