@@ -16,12 +16,11 @@ const Register = () => {
         loading,
         error,
     ] = useCreateUserWithEmailAndPassword(auth);
+    let errorElement;
 
     if (error) {
-        return (
-            <div>
-                <p>Error: {error.message}</p>
-            </div>
+        errorElement = (
+            <p className='text-danger'>Error: {error?.message}</p>
         );
     }
     if (loading) {
@@ -68,8 +67,9 @@ const Register = () => {
                 <Button variant="primary" disabled={!agree} className='btn bg-primary text-white mt-2 w-100' type="submit">
                     Register
                 </Button>
-                <p>Already have an account? <Link to='/login' className='text-danger pe-auto text-decoration-none'>Please Login</Link></p>
+                <p className='mt-2'>Already have an account? <Link to='/login' className='text-danger pe-auto text-decoration-none'>Please Login</Link></p>
             </Form>
+            {errorElement}
         </div>
     );
 };
