@@ -46,7 +46,7 @@ const Register = () => {
         <div className='container w-25 mx-auto mt-5'>
             <h2 className='text-primary text-center'>Please Register...</h2>
             <Form onSubmit={handaleSubmit}>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Group className="mb-3" controlId="formBasicName">
                     <Form.Label>Your Name</Form.Label>
                     <Form.Control ref={nameRef} type="text" placeholder="Full name" required />
                 </Form.Group>
@@ -58,9 +58,9 @@ const Register = () => {
                     <Form.Label>Password</Form.Label>
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
                 </Form.Group>
-                <div class="form-check">
-                    <input onClick={() => setAgree(!agree)} class="form-check-input" name='terms' type="checkbox" value="" id="flexCheckDefault" />
-                    <label className={agree ? 'text-primary' : 'text-danger'} for="flexCheckDefault">
+                <div className="form-check">
+                    <input onClick={() => setAgree(!agree)} className="form-check-input" name='terms' type="checkbox" value="" id="flexCheckDefault" />
+                    <label className={agree ? 'text-primary' : 'text-danger'} htmlFor="flexCheckDefault">
                         Tour With Al-Amin <Link to='/termsAndConditions' className='pe-auto text-decoration-none'>
                             Terms and Conditions
                         </Link>
