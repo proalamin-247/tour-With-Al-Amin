@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
@@ -9,6 +9,7 @@ const Register = () => {
     const emailRef = useRef('');
     const passwordRef = useRef('');
     const navigate = useNavigate();
+    const [agree, setAgree] = useState(false);
     const [
         createUserWithEmailAndPassword,
         user,
@@ -35,8 +36,9 @@ const Register = () => {
         const name = nameRef.current.value;
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
-
-        createUserWithEmailAndPassword(email, password);
+        if (agree) {
+            createUserWithEmailAndPassword(email, password);
+        }
 
     }
     return (
@@ -55,11 +57,16 @@ const Register = () => {
                     <Form.Label>Password</Form.Label>
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                    <Form.Check type="checkbox" label="Check me out" />
-                </Form.Group>
-                <Button variant="primary" type="submit">
-                    Submit
+                <div class="form-check">
+                    <input onClick={() => setAgree(!agree)} class="form-check-input" name='terms' type="checkbox" value="" id="flexCheckDefault" />
+                    <label className={agree ? 'text-primary' : 'text-danger'} for="flexCheckDefault">
+                        Tour With Al-Amin <Link to='/termsAndConditions' className='pe-auto text-decoration-none'>
+                            Terms and Conditions
+                        </Link>
+                    </label>
+                </div>
+                <Button variant="primary" disabled={!agree} className='btn bg-primary text-white mt-2 w-100' type="submit">
+                    Register
                 </Button>
                 <p>Already have an account? <Link to='/login' className='text-danger pe-auto text-decoration-none'>Please Login</Link></p>
             </Form>
