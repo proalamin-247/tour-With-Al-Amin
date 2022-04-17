@@ -13,8 +13,8 @@ const Package = ({ allPackage }) => {
             <img src={img} alt="" />
             <h4 className='mt-1'>{name}</h4>
             <p><small>{description}</small></p>
-            <p className='price-text'>{price} ৳/per person</p>
-            <button onClick={() => navigateToServiceDetails(id)} className='btn btn-primary'>Book this service</button>
+            <p className='price-text'>{price} TK/per person</p>
+            <button onClick={() => navigateToServiceDetails(id)} className='btn btn-primary'>Book this Trip</button>
         </div>
     );
 };

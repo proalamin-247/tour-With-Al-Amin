@@ -27,7 +27,7 @@ const Header = () => {
                             <Nav.Link as={Link} to="/about">About</Nav.Link>
                             {
                                 user ?
-                                    <button className='btn btn-primary' onClick={handaleSignOut}>Sign Out</button>
+                                    <button className='btn btn-primary' onClick={handaleSignOut}>Log out</button>
                                     :
                                     <Nav.Link eventKey={2} as={Link} to="/login">
                                         Login
