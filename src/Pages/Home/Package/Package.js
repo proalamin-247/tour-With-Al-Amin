@@ -6,7 +6,7 @@ const Package = ({ allPackage }) => {
     const { id, name, img, description, price } = allPackage;
     const navigate = useNavigate();
     const navigateToServiceDetails = id => {
-        navigate(`/service/${id}`)
+        navigate(`/service/${id}/checkout`)
     }
     return (
         <div className='package'>

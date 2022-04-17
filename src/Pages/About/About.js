@@ -5,8 +5,8 @@ import './About.css'
 const About = () => {
     return (
         <div className='container mt-5 ok'>
-            <h1>About</h1>
-            <div className='about-area'>
+            <h1 className='text-center'>About</h1>
+            <div className='about-area p-2'>
                 <div className='me mt-3'>
                     <img src={me} alt="" />
                     <h3>Md Al Amin</h3><h6>Founder, Tour With Al Amin</h6>

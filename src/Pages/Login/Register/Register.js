@@ -3,6 +3,7 @@ import { Button, Form } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
+import Loading from '../../Shared/Loading/Loading';
 
 const Register = () => {
     const nameRef = useRef('');
@@ -24,7 +25,7 @@ const Register = () => {
         );
     }
     if (loading) {
-        return <p>Loading...</p>;
+        return <Loading></Loading>
     }
     if (user) {
         navigate('/home');
@@ -46,7 +47,7 @@ const Register = () => {
             <Form onSubmit={handaleSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Your Name</Form.Label>
-                    <Form.Control ref={nameRef} type="email" placeholder="Full name" required />
+                    <Form.Control ref={nameRef} type="text" placeholder="Full name" required />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
