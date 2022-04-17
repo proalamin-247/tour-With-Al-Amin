@@ -4,7 +4,6 @@ import { Carousel } from 'react-bootstrap';
 import banner1 from '../../../images/banner/img1.jpg';
 import banner2 from '../../../images/banner/img2.jpg';
 import banner3 from '../../../images/banner/img3.jpg';
-import Packages from '../Packages/Packages';
 
 const Banner = () => {
     const [index, setIndex] = useState(0);
@@ -54,7 +53,6 @@ const Banner = () => {
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
-            <Packages></Packages>
         </div>
         
     );
