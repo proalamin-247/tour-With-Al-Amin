@@ -14,35 +14,32 @@ const CheckOut = () => {
                <div>
                     <div className="col-md-6">
                         <label htmlFor="inputName" className="form-label">Full Name</label>
-                        <input type="text" className="form-control" id="inputname" placeholder='Enter your full name' />
+                        <input type="text" className="form-control" id="inputname" placeholder='Enter your full name' required/>
                     </div>
                </div>
                     <div className="col-md-6">
                         <label htmlFor="inputtext4" className="form-label">Primary Phone Number</label>
-                        <input type="text" className="form-control" id="inputtext4" placeholder='Enter Your Valid Phone Number'/>
+                    <input type="text" className="form-control" id="inputtext4" placeholder='Enter Your Valid Phone Number' required/>
                     </div>
                 <div className="col-md-6">
                     <label htmlFor="inputtext4" className="form-label">Secondary Phone Number</label>
-                    <input type="text" className="form-control" id="inputtext4" placeholder='Enter Your Valid Phone Number' />
+                    <input type="text" className="form-control" id="inputtext4" placeholder='Enter Your Valid Phone Number' required/>
                 </div>
                 <div className="mb-3">
                     <label htmlFor="exampleFormControlTextarea1" className="form-label">Full Address</label>
-                    <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
                 </div>
                 <div className="col-md-6">
                     <label htmlFor="inputCity" className="form-label">City</label>
-                    <input type="text" className="form-control" id="inputCity"/>
+                    <input type="text" className="form-control" id="inputCity required" required/>
                 </div>
                 <div className="col-md-4">
                     <label htmlFor="inputState" className="form-label">State</label>
-                    <select id="inputState" className="form-select">
-                        <option selected>Choose...</option>
-                        <option>...</option>
-                    </select>
+                    <input type="text" className="form-control" id="inputCity required" required/>
                 </div>
                 <div className="col-md-2">
                     <label htmlFor="inputZip" className="form-label">Zip</label>
-                    <input type="text" className="form-control" id="inputZip"/>
+                    <input type="text" className="form-control" id="inputZip" required/>
                 </div>
                 <div className="form-check">
                     <input onClick={() => setAgree(!agree)} className="form-check-input" name='terms' type="checkbox" value="" id="flexCheckDefault" />
