@@ -13,9 +13,6 @@ const Login = () => {
         const password = passwordRef.current.value;
 
     }
-    const navigateRagister = event => {
-        navigate('/register')
-    }
     return (
         <div className='container w-25 mx-auto mt-5'>
             <h2 className='text-primary text-center'>Please Login...</h2>
@@ -36,7 +33,7 @@ const Login = () => {
                 <Button variant="primary w-100 mt-3" type="submit">
                     Login
                 </Button>
-                <p className='mt-2'>Have not account? <Link to='/register' className='text-primary pe-auto text-decoration-none' onClick={navigateRagister}>Please Register</Link></p>
+                <p className='mt-2'>Have not account? <Link to='/register' className='text-primary pe-auto text-decoration-none'>Please Register</Link></p>
             </Form>
         </div>
     );
