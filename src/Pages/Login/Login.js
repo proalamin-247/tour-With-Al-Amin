@@ -3,6 +3,7 @@ import { Button, Form } from 'react-bootstrap';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
+import Loading from '../Shared/Loading/Loading';
 
 const Login = () => {
     const emailRef = useRef('');
@@ -28,6 +29,9 @@ const Login = () => {
     }
     if (user) {
         navigate(from, { replace: true });
+    }
+    if (loading) {
+        return <Loading></Loading>
     }
     if (error) {
         errorElement = (
