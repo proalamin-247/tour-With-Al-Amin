@@ -4,15 +4,12 @@ import auth from '../../../firebase.init';
 import Loading from '../../Shared/Loading/Loading';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Button, Form } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const ForgetPassword = () => {
     const emailRef = useRef('');
     let errorElement;
-
-    const handaleSubmit = (event) => {
-        event.preventDefault();
-        const email = emailRef.current.value;
-    }
 
     const [email, setEmail] = useState('');
     const [sendPasswordResetEmail, sending, error] = useSendPasswordResetEmail(
@@ -27,7 +24,7 @@ const ForgetPassword = () => {
     if (sending) {
         return <Loading></Loading>;
     }
-    const resetPassword = async () => {
+    const handaleSubmit = async () => {
         const email = emailRef.current.value;
         await sendPasswordResetEmail(email);
         toast.success("password reset link send your email",{
@@ -38,14 +35,19 @@ const ForgetPassword = () => {
     return (
         <div className='container p-5 w-25 mx-auto mt-5 border rounded'>
             <h2>Forget Password</h2>
-            <form onSubmit={handaleSubmit} className='mt-2'>
-                <div className="mb-3">
-                    <input ref={emailRef} type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder='Email' />
-                    <div id="emailHelp" className="form-text">type your account email, which you use create tyour account</div>
-                </div>
+            <Form className='mt-3' onSubmit={handaleSubmit}>
+                <Form.Group controlId="formBasicEmail">
+                    {/* <Form.Label>Email address</Form.Label> */}
+                    <Form.Control ref={emailRef} type="email" placeholder="Enter email" required />
+                    <Form.Text className="text-muted">
+                        We'll never share your email with anyone else.
+                    </Form.Text>
+                </Form.Group>
                 {errorElement}
-                <button onClick={resetPassword} type="submit" className="btn btn-primary">Submit</button>
-            </form>
+                <Button className='mt-2' variant="primary w-100" type="submit">
+                    Submit
+                </Button>
+            </Form>
             <ToastContainer />
         </div>
     );
