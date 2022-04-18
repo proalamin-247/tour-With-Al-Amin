@@ -13,7 +13,7 @@ const CheckOut = () => {
     const handaleSubmit = (event) => {
         event.preventDefault();
         // document.getElementById('email').value = ' ';
-        toast("Wow so easy !");
+        toast("Your Booking is Confirmed, As soon as we contact you");
         document.getElementById('inputName').value = ' ';
         document.getElementById('number1').value = ' ';
         document.getElementById('number2').value = ' ';
