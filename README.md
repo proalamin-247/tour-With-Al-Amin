@@ -32,7 +32,7 @@ link:- https://tour-with-alamin.web.app/
 <br/>
 <br/>
 
-## If you forget your password go to login page and click **Forget Password** than go to **Forget password** page than type your email and submit if send successfull see a **tost message**.
+### If you forget your password go to login page and click **Forget Password** than go to **Forget password** page than type your email and submit if send successfull see a **tost message**.
 
 <br/>
 <br/>
