@@ -61,7 +61,7 @@ const Register = () => {
                 <div className="form-check">
                     <input onClick={() => setAgree(!agree)} className="form-check-input" name='terms' type="checkbox" value="" id="flexCheckDefault" />
                     <label className={agree ? 'text-primary' : 'text-danger'} htmlFor="flexCheckDefault">
-                        Tour With Al-Amin <Link to='/termsAndConditions' className='pe-auto text-decoration-none'>
+                        Tour With Al-Amin <Link to='/terms' className='pe-auto text-decoration-none'>
                             Terms and Conditions
                         </Link>
                     </label>

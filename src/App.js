@@ -12,6 +12,7 @@ import Register from './Pages/Login/Register/Register';
 import ForgetPassword from './Pages/Login/ForgetPassword/ForgetPassword';
 import CheckOut from './Pages/CheckOut/CheckOut';
 import ProtectedRoutes from './Pages/Login/ProtectedRoutes/ProtectedRoutes';
+import TermsAndConditons from './Pages/TermsAndConditons/TermsAndConditons';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
+        <Route path='/terms' element={<TermsAndConditons></TermsAndConditons>}></Route>
         <Route path='/service/:serviceId/checkout' element={
           <ProtectedRoutes>
             <CheckOut></CheckOut>
