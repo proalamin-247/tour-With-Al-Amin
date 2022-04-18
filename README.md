@@ -31,7 +31,9 @@ link:- https://tour-with-alamin.web.app/
     * If click login in go to login page and than login or have not account register account use tour email **(get a mail for email verification)** or google account and than see log out. If logout click you will be logout website.
 <br/>
 <br/>
-### If you forget your password go to login page and click **Forget Password** than go to **Forget password** page than type your email and submit if send successfull see a **tost message**.
+
+## If you forget your password go to login page and click **Forget Password** than go to **Forget password** page than type your email and submit if send successfull see a **tost message**.
+
 <br/>
 <br/>
 
